@@ -1,125 +1,71 @@
-# Data Visualization Dashboard
+# 📊 Django Dynamic Data Visualization Dashboard
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![Django](https://img.shields.io/badge/django-6.0.1-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-5.x-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Govardhan_Mandal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/govardhan-mandal-268121440/)
 
-A Django web application for generating and displaying data visualizations with interactive charts and paginated data tables.
+A full-stack Django web application designed for automated statistical data generation, relational persistence, and dynamic multi-chart visualization analytics.
 
-## Features
+---
 
-- 📊 Multiple chart types: Bar, Scatter, Histogram, Box, Violin, and Line plots
-- 📋 Paginated data table with 10 records per page
-- 🎨 Modern responsive UI with smooth animations
-- 📱 Mobile-friendly design
-- 🔧 Automatic data generation using Faker
-- 🖼️ Chart image generation and storage
+## 🖼️ Dashboard Preview
 
-## Technologies Used
+![Dashboard Preview](dashboard_image.jpeg)
 
-- **Backend**: Django 6.0.1
-- **Database**: SQLite3
-- **Data Generation**: Faker
-- **Data Processing**: Pandas, NumPy
-- **Visualization**: Matplotlib, Seaborn, Plotly
-- **Frontend**: HTML, CSS, JavaScript
+---
 
-## Installation
+## 🚀 Key Features
 
-1. Clone the repository:
+* 📊 **Multi-Chart Analytics Suite:** Generates dynamic statistical plots including Bar charts, Scatter plots, Histograms, Box plots, Violin plots, and Line charts.
+* 📋 **Paginated Data Explorer:** Responsive data table with server-side pagination (10 records/page) and rapid search filters.
+* 🤖 **Automated Synthetic Data Generator:** Integrated `Faker` engine that populates relational SQLite/PostgreSQL schemas with thousands of realistic records on demand.
+* 🎨 **Modern Cyberpunk UI:** Built with responsive CSS Grid, glassmorphic cards, smooth interactive transitions, and mobile viewport adaptability.
+* 🐳 **Docker & Compose Ready:** Containerized setup for deterministic local or cloud deployments.
+
+---
+
+## 🛠️ Technology Stack
+
+* **Backend:** Python 3.x, Django Web Framework (MVC Architecture)
+* **Database:** SQLite3 / PostgreSQL with Django ORM
+* **Data Synthesis & Computation:** Faker, Pandas, NumPy
+* **Visualization Libraries:** Matplotlib, Seaborn, Plotly
+* **DevOps:** Docker, Docker Compose, Gunicorn
+
+---
+
+## 💻 Installation & Quickstart
+
 ```bash
-git clone <repository-url>
-cd Data_V
-```
+# 1. Clone the repository
+git clone https://github.com/Govardhanmandal9421/django-data-visualization-dashboard.git
+cd django-data-visualization-dashboard
 
-2. Create a virtual environment:
-```bash
+# 2. Create and activate virtual environment
 python -m venv venv
-```
-
-3. Activate the virtual environment:
-```bash
-# Windows
+# On Windows:
 venv\Scripts\activate
-
-# macOS/Linux
+# On Linux/macOS:
 source venv/bin/activate
-```
 
-4. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-5. Run database migrations:
-```bash
-python manage.py makemigrations
+# 3. Install dependencies & run migrations
+pip install -r requirements.txt  # or: pip install django faker pandas matplotlib seaborn
 python manage.py migrate
-```
 
-6. Start the development server:
-```bash
+# 4. Launch local development server
 python manage.py runserver
 ```
 
-7. Open your browser and navigate to `http://127.0.0.1:8000/`
+Open `http://127.0.0.1:8000` in your web browser.
 
-## Usage
+---
 
-The application automatically generates sample data and creates various charts when you visit the dashboard. The main features include:
+## 👨‍💻 Author & Connect
 
-- **Charts Section**: Displays 6 different types of visualizations
-- **Data Table**: Shows paginated user data with search and navigation
-- **Responsive Design**: Works on desktop and mobile devices
-
-## Project Structure
-
-```
-Data_V/
-├── Data_V/                 # Main Django project settings
-├── Data_vi/               # Main application
-│   ├── migrations/        # Database migrations
-│   ├── models.py         # Data models
-│   ├── views.py          # View functions
-│   └── demo.py           # Data generation and chart creation
-├── Templates/             # HTML templates
-├── public/                # Static and media files
-├── manage.py             # Django management script
-└── requirements.txt      # Python dependencies
-```
-
-## Models
-
-### Data Model
-- `name`: Character field
-- `age`: Integer field
-- `gender`: Character field
-- `city`: Character field
-- `state`: Character field
-- `country`: Character field
-- `email`: Email field
-
-### Chart Model
-- Stores paths to generated chart images for each chart type
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Author
-
-[Your Name]
-
-## Acknowledgments
-
-- Django documentation
-- Faker library for data generation
-- Matplotlib and Seaborn for visualization
+* **Developer:** Govardhan Mandal
+* **Portfolio:** [govardhanmandal9421.github.io](https://govardhanmandal9421.github.io)
+* **LinkedIn:** [linkedin.com/in/govardhan-mandal-268121440](https://www.linkedin.com/in/govardhan-mandal-268121440/)
+* **GitHub:** [github.com/Govardhanmandal9421](https://github.com/Govardhanmandal9421)
+* **Email:** [g.s.mandal433@gmail.com](mailto:g.s.mandal433@gmail.com)
